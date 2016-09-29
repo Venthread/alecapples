@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    tools:context="aj.vent.com.alecsapples.MainActivity">
+
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_red_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/botBox" />
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_blue_light"
+        android:id="@+id/topBox"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alecView"
+        android:adjustViewBounds="true"
+        android:maxWidth="120dp"
+        android:maxHeight="120dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pixel_dude"
+        android:contentDescription="@string/alec"
+        android:layout_above="@+id/botBox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/appleCountBox"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="44sp"
+        android:textColor="@android:color/black"/>
+
+
+</RelativeLayout>
