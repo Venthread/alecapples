@@ -10,17 +10,43 @@
     <ImageView
         android:layout_width="250dp"
         android:layout_height="100dp"
-        android:background="@android:color/holo_red_dark"
+        android:background="?android:attr/colorFocusedHighlight"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:id="@+id/botBox" />
+
     <ImageView
         android:layout_width="250dp"
         android:layout_height="100dp"
-        android:background="@android:color/holo_blue_light"
-        android:id="@+id/topBox"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/tree2"
+        android:layout_marginTop="14dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignRight="@+id/alecView"
+        android:layout_alignEnd="@+id/alecView"
+        android:layout_toRightOf="@+id/tree1"
+        android:layout_toEndOf="@+id/tree1" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/tree3"
+        android:layout_below="@+id/tree2"
+        android:layout_marginTop="41dp"
+        android:layout_toRightOf="@+id/tree2"
+        android:layout_alignRight="@+id/botBox"
+        android:layout_alignEnd="@+id/botBox" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:background="@android:color/holo_green_dark"
+        android:id="@+id/tree1"
+        android:layout_alignTop="@+id/tree3"
+        android:layout_toLeftOf="@+id/alecView"
+        android:layout_alignLeft="@+id/botBox"
+        android:layout_alignStart="@+id/botBox" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -39,12 +65,24 @@
     <TextView
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:id="@+id/pointCountBox"
+        android:textSize="44sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/botBox"
+        android:layout_alignStart="@+id/botBox"
+        android:layout_toLeftOf="@+id/alecView"
+        android:layout_toStartOf="@+id/alecView" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:id="@+id/appleCountBox"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:textSize="44sp"
-        android:textColor="@android:color/black"/>
+        android:textColor="@android:color/black" />
 
 
 </RelativeLayout>
