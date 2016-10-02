@@ -3,50 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="@drawable/field3"
     tools:context="aj.vent.com.alecsapples.MainActivity">
 
 
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/timer"
+        android:textSize="30sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/botBox"
+        android:layout_toStartOf="@+id/botBox" />
+
     <ImageView
-        android:layout_width="250dp"
+        android:layout_width="120dp"
         android:layout_height="100dp"
-        android:background="?android:attr/colorFocusedHighlight"
+        android:background="@drawable/basket"
+        android:id="@+id/botBox"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/botBox" />
-
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:background="@android:color/holo_green_dark"
-        android:id="@+id/tree2"
-        android:layout_marginTop="14dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/alecView"
-        android:layout_alignEnd="@+id/alecView"
-        android:layout_toRightOf="@+id/tree1"
-        android:layout_toEndOf="@+id/tree1" />
-
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:background="@android:color/holo_green_dark"
-        android:id="@+id/tree3"
-        android:layout_below="@+id/tree2"
-        android:layout_marginTop="41dp"
-        android:layout_toRightOf="@+id/tree2"
-        android:layout_alignRight="@+id/botBox"
-        android:layout_alignEnd="@+id/botBox" />
-
-    <ImageView
-        android:layout_width="250dp"
-        android:layout_height="100dp"
-        android:background="@android:color/holo_green_dark"
-        android:id="@+id/tree1"
-        android:layout_alignTop="@+id/tree3"
-        android:layout_toLeftOf="@+id/alecView"
-        android:layout_alignLeft="@+id/botBox"
-        android:layout_alignStart="@+id/botBox" />
+        android:layout_marginBottom="14dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -59,30 +39,71 @@
         android:src="@drawable/pixel_dude"
         android:contentDescription="@string/alec"
         android:layout_above="@+id/botBox"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="45dp" />
+        android:layout_alignRight="@+id/tree2"
+        android:layout_alignEnd="@+id/tree2" />
 
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:id="@+id/pointCountBox"
-        android:textSize="44sp"
-        android:textColor="@android:color/black"
-        android:layout_alignParentBottom="true"
-        android:layout_alignLeft="@+id/botBox"
-        android:layout_alignStart="@+id/botBox"
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/apple3_small"
+        android:id="@+id/tree2"
+        android:layout_below="@+id/timer"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:src="@drawable/apple3_small"
+        android:id="@+id/tree1"
+        android:layout_below="@+id/tree2"
         android:layout_toLeftOf="@+id/alecView"
         android:layout_toStartOf="@+id/alecView" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/apple2_small"
+        android:id="@+id/tree3"
+        android:layout_alignBottom="@+id/tree1"
+        android:layout_toRightOf="@+id/tree2"
+        android:layout_toEndOf="@+id/tree2"
+        android:layout_marginBottom="25dp" />
+
 
     <TextView
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/appleCountBox"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
         android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/botBox"
+        android:layout_marginLeft="23dp"
+        android:layout_marginStart="23dp"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="44sp"
-        android:textColor="@android:color/black" />
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/pointCountBox"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/botBox"
+        android:layout_marginRight="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_marginBottom="17dp"
+        android:layout_above="@+id/alecView"
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>
